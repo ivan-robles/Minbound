@@ -1,0 +1,295 @@
+
+
+/*hero y menu*/
+.navbar-dark .navbar-nav .nav-link {
+    
+    color: white !important;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #832432 !important; /* Color al pasar el mouse */
+}
+
+.navbar-brand .logo {
+    max-width: 40px; /* Ajusta el tamaño del logo para que ocupe menos espacio */
+    margin-right: 8px; /* Ajusta el margen para acercar el texto */
+  }
+  
+  .navbar-brand span {
+    font-size: 1rem; /* Reduce el tamaño del título si es necesario */
+  }
+
+.hero {
+    height: 100vh; /* Esto hace que la sección ocupe toda la altura de la ventana */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Color de texto blanco para mejorar la visibilidad */
+}
+.display-4{
+    color:#7B1322;
+    text-shadow: 2px 2px 3px rgb(255, 255, 255);
+    letter-spacing: 5px;
+}
+.lead{
+    color: white;
+    letter-spacing: 5px;
+}
+.hero-content {
+    text-align: center;
+}
+.logo {
+    height: 40px;
+    width: auto;
+}
+
+/*Boton*/
+.btn-neon {
+  letter-spacing: 3px;
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 5px;
+  background:transparent;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-neon:hover {
+  text-decoration: none;
+  background: transparent;
+  color: #7B1322;
+}
+
+.btn-neon:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: opacity 0.2s;
+  opacity: 0;
+}
+
+.btn-neon:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 8px rgba(255, 0, 77, 0.4);
+}
+
+.btn-neon:active:before {
+  opacity: 0.3;
+}
+
+
+  
+  /* Contenedor de partículas */
+.particle-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 10;
+}
+
+/* Estilo de cada partícula */
+.particle {
+    position: absolute;
+    top: 0;
+    width: 5px;
+    height: 10px;
+    background-color: rgba(139, 0, 0, 0.8); /* Color similar a sangre */
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: fall linear infinite;
+}
+
+/* Animación de caída */
+@keyframes fall {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
+
+/*SECCION NIVELES*/
+ .nivel-container .level-title {
+
+    color:white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+  }
+  
+  .nivel-container .level {
+    border: 1px solid #ddd; /* Opcional, para añadir un borde */
+    padding: 20px; /* Ajusta el espaciado interno */
+    margin-top: 20px; /* Espaciado entre los niveles y la sección superior */
+    margin-bottom: 20px; /* Espaciado entre los niveles y la sección inferior */
+  }
+  
+.title {
+    font-size: 48px;
+    text-align: center;
+    color: #7B1322;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 3px rgb(255, 255, 255);
+  }
+
+  .level {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+ .level:hover{
+  transform: scale(1.05) translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ }
+  .level img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .level-title{
+    letter-spacing: 1px;
+  }
+  .description {
+    margin-top: 10px;
+    text-align: justify;
+    font-size: 18px;
+    color: #fff;
+    
+  }
+
+
+.features {
+    padding: 50px 0;
+}
+
+.feature-item {
+    margin-bottom: 30px;
+}
+
+.feature-img {
+    max-height: 400px;
+    object-fit: cover;
+}
+.imagenes-contenido {
+    padding: 50px 0;
+}
+
+/*SECCION VIDEO*/
+
+/*SECCION CONTENIDO*/
+.text-center-contenido {
+    font-size: 48px;
+    text-align: center;
+    color: #7B1322;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 3px rgb(255, 255, 255);
+  }
+
+/*SECCION ACERCA DE*/
+.text-center-acerca-de {
+    font-size: 48px;
+    text-align: center;
+    color: #7B1322;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 3px rgb(255, 255, 255);
+  }
+
+  .descri{
+    color: black;
+    text-align: justify;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400 ;
+    font-style: normal;
+  }
+
+/*SECCION COMUNIDAD*/
+.titulo-comunidad{
+    font-size: 48px;
+    text-align: center;
+    color: #7B1322;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 3px rgb(255, 255, 255);
+}
+
+.descripcion-comunidad{
+    color: white;
+    text-align: justify;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400 ;
+    font-style: normal;
+}
+.comunidad-link {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.comunidad-link:hover {
+  color: #832432; /* Cambia el color del texto en el hover */
+  transform: translateY(-5px); /* Desplaza ligeramente hacia arriba */
+}
+
+.icono-comunidad {
+  transition: transform 0.3s ease;
+}
+
+.comunidad-link:hover .icono-comunidad {
+  transform: scale(1.1); /* Agranda ligeramente el icono al hacer hover */
+}
+
+
+/*SECCION PREGUNTAS Y SUGERENCIAS*/
+.preguntas-sugerencias{
+    background-color: #333;
+}
+
+.titulo-preguntas{
+    font-size: 48px;
+    text-align: center;
+    color: #7B1322;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 3px rgb(255, 255, 255);
+}
+
+label{
+    font-family: "Rubik Wet Paint", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    letter-spacing: 5px;
+}
+
+.btn{
+  border-color: #7B1322;
+  background-color:#7B1322;
+  font-family: "Rubik Wet Paint", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  border-radius: 10px;
+}
+
+.btn:hover{
+  border-color: #7B1322;
+  background-color: #832432;
+}

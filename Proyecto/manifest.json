@@ -1,0 +1,28 @@
+{
+  "name": "Mindbound",
+  "short_name": "Test",
+  "description": "Testing testing, 1, 2, 3",
+  "start_url": "/",
+  "scope": "/index.html",
+  "icons": [
+    {
+      "src": "/Icons/Logo_del_Videojuego__2_-removebg-preview.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/Icons/Logo_del_Videojuego__2_-removebg-preview.png",
+      "sizes": "256x2565",
+      "type": "image/png"
+    },
+    {
+      "src": "/Icons/Logo_del_Videojuego__2_-removebg-preview.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#325010",
+  "background_color": "#0F7F9F",
+  "display": "fullscreen",
+  "orientation": "portrait"
+}
