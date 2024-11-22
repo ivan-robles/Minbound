@@ -1,8 +1,10 @@
 
 
 /*hero y menu*/
-.navbar-dark .navbar-nav .nav-link {
-    
+.navbar-dark .navbar-nav .nav-link, .navbar-brand {
+  font-family: "Rubik Wet Paint", system-ui;
+  font-weight: 400;
+  font-style: normal;
     color: white !important;
 }
 
@@ -45,6 +47,9 @@
 
 /*Boton*/
 .btn-neon {
+  font-family: "Rubik Wet Paint", system-ui;
+  font-weight: 400;
+  font-style: normal;
   letter-spacing: 3px;
   display: inline-block;
   padding: 15px 30px;
@@ -292,4 +297,28 @@ label{
 .btn:hover{
   border-color: #7B1322;
   background-color: #832432;
+}
+
+/*SECCION FOOTER*/
+/*SUB-CECCION ENLACES*/
+ .tittle-enlace, .tittle_redes{
+  color: white;
+    text-align: justify;
+    font-family: "Rubik Wet Paint", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400 ;
+    font-style: normal;
+}
+.enlace, .redes{
+  color: white;
+  text-align: justify;
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400 ;
+  font-style: normal;
+}
+
+/*SUB-CECCION ETIQUETAS*/
+.etiquetas{
+  background-color: transparent;
 }

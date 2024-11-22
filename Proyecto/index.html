@@ -43,7 +43,7 @@
             background-attachment: fixed;
         }
 
-        h1, h2, h3, a, .lead {
+        h1, h2, h3, .lead {
             font-family: "Rubik Wet Paint", system-ui;
             font-weight: 400;
             font-style: normal;
@@ -64,6 +64,7 @@
 
 <body>
     <div class="particle-container"></div>
+    <div id="google_translate_element"></div> 
 
 <!-- Navegación -->
 <nav class="navbar navbar-expand-md navbar-dark">
@@ -146,7 +147,7 @@
             <p class="description">La búsqueda de alivio lleva a Joshua, a refugiarse en las redes sociales y 
                 los videojuegos, sumergiéndose en un mundo de pensamientos compulsivos. Aquí comienza su lucha 
                 interna, un viaje hacia la confrontación de sus adicciones psicológicas y emocionales, donde cada 
-                paso representa un desafío y cada elección, un peligro inminente.
+                paso representa un desafío y cada elección, un peligro inminente.<BR><BR><BR><BR><BR>
             </p>
           </div>
         </div>
@@ -158,7 +159,7 @@
             <p class="description">Joshua despierta atrapado en los rincones más profundos de su inconsciente, un paisaje 
                 distorsionado y fragmentado que refleja su confusión mental. Los caminos ante él se mueven y retuercen, 
                 cambiando constantemente como un laberinto vivo, mientras flashes intermitentes de luz ofrecen momentos 
-                fugaces de claridad en medio del caos.</p>
+                fugaces de claridad en medio del caos.</p><BR>
           </div>
         </div>
         <div class="col-md-4">
@@ -372,33 +373,33 @@
     <div class="container">
         <div class="row">
             <!-- Enlaces a Secciones del Sitio -->
-            <div class="col-md-3 mb-4">
-                <h5>Enlaces</h5>
+            <div class=" col-md-3 mb-4">
+                <h5 class="tittle-enlace">Enlaces</h5>
                 <ul class="list-unstyled">
-                    <li><a href="#niveles" class="text-white">Niveles</a></li>
-                    <li><a href="#video-promocional" class="text-white">Video Promocional</a></li>
-                    <li><a href="#contenido" class="text-white">Contenido</a></li>
-                    <li><a href="#acerca-de" class="text-white">Acerca de</a></li>
-                    <li><a href="#comunidad" class="text-white">Comunidad</a></li>
+                    <li class="enlace"><a href="#niveles" class="text-white">Niveles</a></li>
+                    <li class="enlace"><a href="#video-promocional" class="text-white">Video Promocional</a></li>
+                    <li class="enlace"><a href="#contenido" class="text-white">Contenido</a></li>
+                    <li class="enlace"><a href="#acerca-de" class="text-white">Acerca de</a></li>
+                    <li class="enlace"><a href="#comunidad" class="text-white">Comunidad</a></li>
                 </ul>
             </div>
 
            <!-- Redes Sociales -->
-<div class="col-md-3 mb-4">
-    <h5>Síguenos</h5>
-    <ul class="list-unstyled">
-        <li>
+<div class=" col-md-3 mb-4">
+    <h5 class="tittle_redes">Síguenos</h5>
+    <ul class=" list-unstyled">
+        <li class="redes">
             <a href="https://facebook.com" target="_blank" class="text-white">
                 <img src="Icons/facebook.png" alt="Facebook" style="height: 20px; width: 20px; margin-right: 8px;">
                 Facebook
             </a>
         </li>
-        <li>
+        <li class="redes">
             <a href="https://twitter.com" target="_blank" class="text-white">
                 <img src="Icons/x.png" alt="Twitter" style="height: 20px; width: 20px; margin-right: 8px;">
                 Twitter
             </a>
-        </li>
+        </li class="redes">
         <li>
             <a href="https://instagram.com" target="_blank" class="text-white">
                 <img src="Icons/instagram.png" alt="Instagram" style="height: 20px; width: 20px; margin-right: 8px;">
@@ -410,7 +411,7 @@
 
 
             <!-- Logo y Imágenes -->
-            <div class="col-md-6 text-center">
+            <div class="etiquetas col-md-6 text-center">
                 <img src="IMG/Logo del Videojuego.jpg" alt="Logo de la Empresa" class="img-fluid mb-3"
                     style="height: 80px;">
                 <div class="d-flex justify-content-center">
@@ -427,7 +428,7 @@
         <!-- Leyenda de Copyright -->
         <div class="row">
             <div class="col-12 text-center mt-4">
-                <p class="mb-0">&copy; 2024 Mindbound. Todos los derechos reservados.</p>
+                <p class=" mb-0">&copy; 2024 Mindbound. Todos los derechos reservados.</p>
             </div>
         </div>
     </div>
@@ -466,6 +467,16 @@
     });
     
 </script>
-
+<!--Script para la traduccion-->
+<script src="script.js"></script>
+      <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_translate_element'
+            );
+        } 
+  </script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
