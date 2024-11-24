@@ -160,8 +160,8 @@
   }
 
  .level:hover{
-  transform: scale(1.05) translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05) translateY(-5px) ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) ;
  }
   .level img {
     width: 100%;
@@ -199,7 +199,13 @@
 }
 
 /*SECCION VIDEO*/
-
+.Title-video{
+  font-size: 48px;
+    text-align: center;
+    color: #7B1322;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 3px rgb(255, 255, 255);
+}
 /*SECCION CONTENIDO*/
 .text-center-contenido {
     font-size: 48px;
@@ -220,14 +226,67 @@
 
   .descri{
     color: black;
-    text-align: justify;
     font-family: "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400 ;
     font-style: normal;
   }
+ /* Estilo para las tarjetas */
+.neon-card {
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo negro con 50% de opacidad */
+  border-radius: 10px;
+  box-shadow: 
+      0 0 1px rgba(0, 0, 0, 0.8),
+      0 0 2px rgba(255, 80, 50, 0.7), /* Tono rojo-anaranjado */
+      0 0 4px rgba(255, 136, 0, 0.8); /* Tono anaranjado neón */
+  padding: 20px;
+  margin: 10px auto;
+  color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover para el efecto neón */
+.neon-card:hover {
+  transform: scale(1.05);
+  box-shadow: 
+      0 0 10px rgba(0, 0, 0, 0.9),
+      0 0 12px rgba(255, 80, 50, 0.9),
+      0 0 14px rgba(255, 136, 0, 1);
+}
+
+/* Estilo para los párrafos */
+.neon-card p {
+  font-size: 1rem;
+  color: #ffd9a9; /* Color cálido que combina con los tonos de la imagen */
+  text-shadow: 
+      0 0 3px rgba(255, 80, 50, 0.6),
+      0 0 7px rgba(255, 136, 0, 0.8);
+}
 
 /*SECCION COMUNIDAD*/
+.contenido-comunidad {
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con 50% de opacidad */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 
+      0 0 1px rgba(0, 0, 0, 0.8),
+      0 0 2px rgba(255, 80, 50, 0.7), /* Tono rojo-anaranjado */
+      0 0 4px rgba(255, 136, 0, 0.8); /* Tono anaranjado neón */
+  padding: 20px; /* Espaciado interno */
+  margin: 10px auto; /* Margen centrado */
+  color: #ffffff; /* Texto blanco */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contenido-comunidad:hover {
+  transform: scale(1.05); /* Efecto de zoom */
+  box-shadow: 
+      0 0 10px rgba(0, 0, 0, 0.9),
+      0 0 12px rgba(255, 80, 50, 0.9),
+      0 0 14px rgba(255, 136, 0, 1); /* Mayor intensidad en el hover */
+}
+
+
+
 .titulo-comunidad{
     font-size: 48px;
     text-align: center;
@@ -266,13 +325,13 @@
 
 /*SECCION PREGUNTAS Y SUGERENCIAS*/
 .preguntas-sugerencias{
-    background-color: #333;
+    background-color: #7B1322;
 }
 
 .titulo-preguntas{
     font-size: 48px;
     text-align: center;
-    color: #7B1322;
+    color:#7B1322;
     letter-spacing: 3px;
     text-shadow: 2px 2px 3px rgb(255, 255, 255);
 }
@@ -299,7 +358,72 @@ label{
   background-color: #832432;
 }
 
+/*SECCION COMENTARIOS*/
+.section-title {
+  font-size: 48px;
+  text-align: center;
+  color: #7B1322;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 3px rgb(255, 255, 255);
+}
+.comment-card {
+  text-align: justify;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo negro con 50% de opacidad */
+  border-radius: 10px;
+  box-shadow: 
+      0 0 1px rgba(0, 0, 0, 0.8),
+      0 0 2px rgba(255, 80, 50, 0.7), /* Tono rojo-anaranjado */
+      0 0 4px rgba(255, 136, 0, 0.8); /* Tono anaranjado neón */
+  padding: 20px;
+  margin: 10px auto;
+  color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.comment-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.9);
+}
+.comment-card .card-header {
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo negro con 50% de opacidad */
+  border-radius: 10px;
+  box-shadow: 
+      0 0 1px rgba(0, 0, 0, 0.8),
+      0 0 2px rgba(255, 80, 50, 0.7), /* Tono rojo-anaranjado */
+      0 0 4px rgba(255, 136, 0, 0.8); /* Tono anaranjado neón */
+  color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.name-user{
+  font-family: "Rubik Wet Paint", system-ui;
+  font-style: normal;
+ 
+}
+.comentario{
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400 ;
+  font-style: normal;
+}
+.user-img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  object-fit: cover;
+  box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.3);
+}
+.card-body {
+  font-size: 1rem;
+  color: #f8f8f8;
+  line-height: 1.6;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+}
+
+
 /*SECCION FOOTER*/
+
 /*SUB-CECCION ENLACES*/
  .tittle-enlace, .tittle_redes{
   color: white;
@@ -319,6 +443,9 @@ label{
 }
 
 /*SUB-CECCION ETIQUETAS*/
-.etiquetas{
-  background-color: transparent;
+.Contenedor-footer{
+  background-color: rgba(0, 0, 0, 0.4); /* Fondo negro con opacidad */
+  padding: 20px; 
+  border-radius: 10px; /* Bordes redondeados */
+  border: 3px solid #93414d; /* Borde color tinto con grosor de 3px */
 }
